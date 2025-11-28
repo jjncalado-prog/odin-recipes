@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    background-color: lightgrey;
+    color: white;
+    line-height: 1.5;
+    margin-top: 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.Pages ul {
+    list-style: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px 18px;
+    border: 0px;
+    display: inline-block;
+}
+
+.header.home a,
+.header.home h1,
+.header.home .dropdown-toggle {
+    color: black;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    margin-top: 1%;
+    padding: 0;
+    border-radius: 5px;
+}
+
+/* tornar cada item clicável */
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+}
+
+/*hover nos items*/
+.dropdown-menu li a:hover {
+    background: #eee;
+}
+
+/*“Quando o rato estiver por cima da .dropdown…
+…então aplica estas regras ao elemento .dropdown-menu que está dentro dela.”*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.hero-img {
+    width: 100vw; /* largura total da janela */
+    height: 100vh; /* altura total da janela */
+    object-fit: cover; /* preenche a área sem distorcer */
+    display: block;
+}
+
+.header.home {
+    color: black;
+}
+
+.intro {
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.intro p {
+    font-size: 20px;
+}
+
+.intro h1 {
+    font-weight: 750;
+    font-size: 40px;
+    margin-bottom: -5px;
+}
+
+.text {
+    margin: 15px;
+    padding: 7px;
+    background-color: #eee;
+    color: grey;
+    border-radius: 10px;
+}
+
+div h2 {
+    padding: 15px;
+    margin-bottom: -10px;
+}
+
+.ingredients {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+.ingredients-wrapper {
+    text-align: center;
+    margin: 20px;
+}
